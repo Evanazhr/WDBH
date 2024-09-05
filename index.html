@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Happy birthday</title>
+
+    <!-- font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+
+    <link rel="stylesheet" href="style/style.css" />
+  </head>
+  <body>
+    <audio id="audioPlayer" src="audio/hbd.mp3"></audio>
+
+    <div class="container">
+      <p class="text">text</p>
+
+      <div id="click-me" class="none">
+        <button>Click Me</button>
+      </div>
+
+      <div class="none" id="wish">
+        <span id="image-container" class="relative">
+            <div id="confetti-popper" class="button" onmousedown="party.confetti(this)">🎉</div>
+          <img src="" id="image" alt="Ini foto Aib :V" />
+        </span>
+
+        <h1>HBD ke 19th Banh 🥳</h1>
+        <span id="fake-wish">
+          <p>
+            Semoga yang disemogakan segera disegerakan dan tidak hanya menjadi
+            sesuatu yang disemogakan saja 😹😹😹
+          </p>
+          <button id="real-wish-button">doa yang rill 👈</button>
+        </span>
+        <span id="real-wish" class="none">
+          <p>
+            Tadinya pengen diketik tapi rada ngerasa alay cuy, yaudah yang fake ajalah ya 🗿 xixixi 🥳
+          </p>
+          <button id="fake-wish-button">yang fake ajalah 👈</button>
+        </span>
+      </div>
+
+      <div id="balloonContainer"></div>
+    </div>
+
+    <script src="script/main.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/party-js@latest/bundle/party.min.js"></script>
+  </body>
+</html>

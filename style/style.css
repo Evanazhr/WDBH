@@ -1,0 +1,64 @@
+*{
+    font-family: 'Poppins', sans-serif;
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    display: flex;
+    min-height: 100vh;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    max-width: 640px;
+    margin: 0 auto ;
+}
+
+.none{
+    display: none;
+}
+
+
+.text{
+    font-size: 48px;
+    text-align: center;
+}
+
+#wish{
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;  
+    animation-name: fadeIn;
+    animation-duration: 2s;
+}
+
+@keyframes fadeIn {
+    0% {opacity: 0;}
+    100% {opacity: 1;}
+    
+}
+
+#image {
+    max-width: 90%;
+}
+
+h1{
+  line-height: 0;
+}
+
+
+#confetti-popper{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    cursor: pointer;
+    font-size: 50px;
+}
+
+.relative {
+    position: relative;
+}
